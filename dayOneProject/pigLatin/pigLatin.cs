@@ -14,11 +14,12 @@ namespace pigLatin
 
             string first = answer.Substring(0, 1);
             string last = answer.Substring(answer.Length - 1);
-            string pig1 = ""; //pig latin
-            string pig2 = ""; //first letter
-            string space = " ";
-            string extra = ""; //extra letters
-            int pos = 0; //position
+            string pigLatin = "";
+            string firstLetter;
+            string restOfWord;
+            string vowels = "AEIOUaeiou";
+            int letterPos;
+
 
             if (vowelList.Contains(first) && vowelList.Contains(last))
             {
@@ -29,25 +30,21 @@ namespace pigLatin
             } else if(answer.IndexOfAny(vowelList2) == -1)
             {
                 Console.WriteLine(answer + "ay");
-            } else 
+            } else foreach (string word in answer.Split())
+        
             {
-                foreach (string word in answer.Split())
+                firstLetter = word.Substring(0, 1);
+                restOfWord = word.Substring(1, word.Length - 1);
+                letterPos = vowels.IndexOf(firstLetter);
+                if (letterPos == -1)
                 {
-                    if (pos != 0)
-                    {
-                        pig1 = pig1 + space;
-                    }
-
-                    else
-                    {
-                        pos = 1;
-                    }
-
-                    pig2 = word.Substring(0, 1);
-                    extra = word.Substring(1, word.Length - 1);
-                    pig1 = pig1 + extra + pig2 + "ay";
-
+                    pigLatin = restOfWord + firstLetter + "ay";
                 }
+                else
+                {
+                    pigLatin = word + "way";
+                }
+                Console.WriteLine(pigLatin);
 
             }
         }

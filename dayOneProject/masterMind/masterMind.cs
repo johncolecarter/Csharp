@@ -260,7 +260,7 @@ namespace masterMind
                 }
                 if(playerScore == 1)
                 {
-                    Console.WriteLine("Woudl you like to play again?");
+                    Console.WriteLine("Would you like to play again?");
                     string answer = Console.ReadLine();
                     if (answer == "yes")
                     {

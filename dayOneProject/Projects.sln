@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ticTacToe", "ticTacToe\ticT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "masterMind", "masterMind\masterMind.csproj", "{E6BACAF0-5E65-41AA-A9BE-D931A891C862}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gradeBook", "gradeBook\gradeBook.csproj", "{89912ED9-869D-4D93-82AD-DDD41EBA0E76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,5 +39,9 @@ Global
 		{E6BACAF0-5E65-41AA-A9BE-D931A891C862}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6BACAF0-5E65-41AA-A9BE-D931A891C862}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6BACAF0-5E65-41AA-A9BE-D931A891C862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89912ED9-869D-4D93-82AD-DDD41EBA0E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89912ED9-869D-4D93-82AD-DDD41EBA0E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89912ED9-869D-4D93-82AD-DDD41EBA0E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89912ED9-869D-4D93-82AD-DDD41EBA0E76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

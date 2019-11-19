@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "superVillain", "superVillan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "carLot", "carLot\carLot.csproj", "{DAB5AFB1-02BA-4955-9C89-CA0667C31283}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRentable", "IRentable\IRentable.csproj", "{F99F54C6-B570-489B-BD06-BFB2A0A91739}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,5 +75,9 @@ Global
 		{DAB5AFB1-02BA-4955-9C89-CA0667C31283}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAB5AFB1-02BA-4955-9C89-CA0667C31283}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAB5AFB1-02BA-4955-9C89-CA0667C31283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F99F54C6-B570-489B-BD06-BFB2A0A91739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F99F54C6-B570-489B-BD06-BFB2A0A91739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F99F54C6-B570-489B-BD06-BFB2A0A91739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F99F54C6-B570-489B-BD06-BFB2A0A91739}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

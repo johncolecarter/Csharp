@@ -6,6 +6,10 @@ namespace fenceBuilder
     {
         static void Main(string[] args)
         {
+            AppStart a = new AppStart();
+            a.Start();
+
+
             Console.WriteLine("Wood or Medal?");
             string userInput = Console.ReadLine();
             bool run = true;

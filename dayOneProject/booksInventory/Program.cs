@@ -12,15 +12,12 @@ namespace booksInventory
 
             addBook.Database.EnsureCreated();
 
-
             int count = 0;
 
             string end = string.Empty;
 
             do
             {
-
-
                 count++;
 
                 Console.WriteLine("Enter the title of the book.");

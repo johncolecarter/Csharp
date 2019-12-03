@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkers", "checkers\checke
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "booksInventory", "booksInventory\booksInventory.csproj", "{FAAC4B96-04EB-4291-A439-F94DDD2F5285}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "toDoCheckPoint", "toDoCheckPoint\toDoCheckPoint.csproj", "{00CB662D-248A-44B2-99CF-020B3194F7CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApp", "ToDoApp\ToDoApp.csproj", "{17C01F26-E3D2-467E-A678-BCFDC95BCABB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,5 +101,13 @@ Global
 		{FAAC4B96-04EB-4291-A439-F94DDD2F5285}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAAC4B96-04EB-4291-A439-F94DDD2F5285}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAAC4B96-04EB-4291-A439-F94DDD2F5285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CB662D-248A-44B2-99CF-020B3194F7CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CB662D-248A-44B2-99CF-020B3194F7CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CB662D-248A-44B2-99CF-020B3194F7CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CB662D-248A-44B2-99CF-020B3194F7CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C01F26-E3D2-467E-A678-BCFDC95BCABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C01F26-E3D2-467E-A678-BCFDC95BCABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C01F26-E3D2-467E-A678-BCFDC95BCABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C01F26-E3D2-467E-A678-BCFDC95BCABB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

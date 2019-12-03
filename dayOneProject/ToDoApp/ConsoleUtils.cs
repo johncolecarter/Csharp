@@ -5,9 +5,7 @@ namespace ToDoApp
 {
     public class ConsoleUtils
     {
-        //A ConsoleUtils class to handle printing to the console, and reading from the console.
-        //Yes, this could be done in the App class, but we want to contain all code that handles user input and display to the ConsoleUtils class
-
+        
         public static string DisplayMenu()
         {
             string menu = "Please choose a selection to continue through the app. " +
@@ -47,8 +45,6 @@ namespace ToDoApp
             newItem[0] = Console.ReadLine();
             Console.WriteLine("What is the status of the item?");
             newItem[1] = Console.ReadLine();
-            //Console.WriteLine("What is the due date of the item?");
-            // newItem[2] = Console.ReadLine();
 
             return newItem;
         }

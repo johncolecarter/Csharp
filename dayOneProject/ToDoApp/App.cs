@@ -5,7 +5,6 @@ namespace ToDoApp
 {
     public class App
     {
-        //will create a new "repo" and then run console utils functions on the repo?? 
         ItemRepository repo;
         public App()
         {
@@ -30,20 +29,20 @@ namespace ToDoApp
                         break;
                     case "Add":
                         string[] newItem = ConsoleUtils.ItemUserInput();
-                        repo.AddItem(newItem[0], newItem[1]);//DateTime.Parse(newItem[2])
+                        repo.AddItem(newItem[0], newItem[1]);
                         DisplayALL();
                         break;
                     case "Delete":
-                        //ask usr for id
+                        
                         int itemID = ConsoleUtils.GetItemID();
-                        //remove
+                      
                         repo.DeleteItem(itemID);
                         DisplayALL();
                         break;
                     case "Edit":
                         itemID = ConsoleUtils.GetItemID();
                         string[] updatedItem = ConsoleUtils.ItemUserInput();
-                        repo.UpdateItem(itemID, updatedItem[0], updatedItem[1]);//, DateTime.Parse(updatedItem[2])
+                        repo.UpdateItem(itemID, updatedItem[0], updatedItem[1]);
                         DisplayALL();
                         break;
                     case "Pending":

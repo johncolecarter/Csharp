@@ -2,7 +2,7 @@
 
 namespace ToDoApp
 {
-    class Program //APP class
+    class Program 
     {
         static void Main(string[] args)
         {

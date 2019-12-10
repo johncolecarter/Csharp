@@ -34,7 +34,7 @@ namespace ToDoApp
             Console.Clear();
             foreach (ToDoItem item in list)
             {
-                Console.WriteLine($"{item.Id} | {item.Description} | {item.Status} ");//| {item.dueDate}
+                Console.WriteLine($"{item.Id} | {item.Description} | {item.Status} ");
             }
 
         }

@@ -6,7 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
     <PackageReference Include="Override_SaveChanges_EntityFramework" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ToDoList0.db" />
   </ItemGroup>
 </Project>

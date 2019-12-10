@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace ToDoApp
 {
@@ -45,6 +47,7 @@ namespace ToDoApp
         public List<ToDoItem> GetPendingItems()
         {
             IEnumerable<ToDoItem> list = context.ToDoItems.Where(item => item.Status == "Pending");
+            //IEnumerable<ToDoItem> List = context.Database.ExecuteSqlCommand("SELECT * FROM list WHERE status = 'Pending', null");
             return list.ToList();
         }
         public List<ToDoItem> GetDoneItems()

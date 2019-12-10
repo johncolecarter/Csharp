@@ -1,12 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace toDoCheckPoint
 {
     public class ConsoleUtils
     {
-        public static void RunApp()
+        public string RunApp()
         {
-            string menu = "Please enter on eof the following." +
+            string menu = "Please enter one of the following." +
                 "\n 'Add' to add an item." +
                 "\n 'Edit' to edit an item." +
                 "\n 'Delete' to delete an item." +
@@ -15,81 +16,51 @@ namespace toDoCheckPoint
                 "\n 'Pending' to list all pending items." +
                 "\n 'Exit' to exit the program.";
             Console.WriteLine(menu);
-            string input = Console.ReadLine();
-
-            do
-            {
-                if (input == "Add" || input == "add")
-                {
-                    AddItem();
-
-                } /*else if (inupt == "Edit" || input == "edit")
-                {
-                    EditItem();
-
-                } else if (input == "Delete" || input == "delete")
-                {
-                    DeleteItem();
-
-                } else if (input == "List" || input == "list")
-                {
-                    ListAll();
-
-                } else if (input == "Done" || input == "done")
-                {
-                    DoneItems();
-
-                } else if (input == "Pending" || input == "pending")
-                {
-                    PendingItems();
-
-                }*/
-                else
-                {
-                    Console.WriteLine("Invalid input.");
-                    Console.ReadKey();
-                    Console.Clear();
-                    RunApp();
-                }
-            } while (input != "Exit" || input != "exit");
+            return Console.ReadLine();
         }
 
-        public static void AddItem()
+        public ToDoItem AddItem()
         {
-            ItemContext itemAdd = new ItemContext();
+         
+            Console.WriteLine("Enter the items description.");
+            string item = Console.ReadLine();
 
-            itemAdd.Database.EnsureCreated();
+            Console.WriteLine("Enter the status of the item. 'Done' or 'Pending'.");
+            string status = Console.ReadLine();
 
-            int Id = 0;
+            return new ToDoItem() { Item = item, Status = status };
+            
+        }
 
-            string end = string.Empty;
-
-            do
+        public void ListAll(List<ToDoItem> item)
+        {
+            foreach(var l in item)
             {
-                Id++;
+                Console.WriteLine(l.Id + " | " + l.Item.ToString() + " | " + l.Status);
+            }
+        }
 
-                Console.WriteLine("Enter the items description.");
-                string Item = Console.ReadLine();
+        public void ListPending(List<ToDoItem> item)
+        {
+            foreach(var l in item)
+            {
+                Console.WriteLine(l.Id + " | " + l.Item.ToString() + " | " + l.Status);
+            }
+        }
 
-                Console.WriteLine("Enter the status of the item. 'Done' or 'Pending'.");
-                string Status = Console.ReadLine();
+        public void ListDone(List<ToDoItem> item)
+        {
+            foreach (var l in item)
+            {
+                Console.WriteLine(l.Id + " | " + l.Item.ToString() + " | " + l.Status);
+            }
+        }
 
-                if (Status == " ")
-                {
-                    _ = Status == "pending";
-                }
-
-                ToDoItem newItem = new ToDoItem(Id, Item, Status);
-
-                itemAdd.Add(newItem);
-
-
-                Console.WriteLine("Enter 'Done' to exit to the menu or press enter to add another item.");
-                end = Console.ReadLine();
-
-                itemAdd.SaveChanges();
-
-            } while (end != "done" || end != "Done");
+        public string GetItemName(List<ToDoItem> toDoItems)
+        {
+            ListAll(toDoItems);
+            Console.WriteLine("Enter the name of the item.");
+            return Console.ReadLine();
         }
     }
 }

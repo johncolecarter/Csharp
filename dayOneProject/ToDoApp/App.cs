@@ -18,7 +18,7 @@ namespace ToDoApp
         public void ProcessInput()
         {
             //Display menu
-            DisplayALL();
+            //DisplayALL();
             string action = ConsoleUtils.DisplayMenu();
             while (action != "Exit")
             {

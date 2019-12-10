@@ -12,11 +12,6 @@ namespace toDoCheckPoint
         public string Item { get; set; }
         public string Status { get; set; }
 
-        public ToDoItem(int Id, string Item, string Status)
-        {
-            this.Id = Id;
-            this.Item = Item;
-            this.Status = Status;
-        }
+       
     }
 }

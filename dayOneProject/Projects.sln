@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "toDoCheckPoint", "toDoCheck
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApp", "ToDoApp\ToDoApp.csproj", "{17C01F26-E3D2-467E-A678-BCFDC95BCABB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "practiceFileIO", "practiceFileIO\practiceFileIO.csproj", "{CE152BB6-EB9C-4171-81DD-30511B762684}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,5 +111,9 @@ Global
 		{17C01F26-E3D2-467E-A678-BCFDC95BCABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17C01F26-E3D2-467E-A678-BCFDC95BCABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17C01F26-E3D2-467E-A678-BCFDC95BCABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE152BB6-EB9C-4171-81DD-30511B762684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE152BB6-EB9C-4171-81DD-30511B762684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE152BB6-EB9C-4171-81DD-30511B762684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE152BB6-EB9C-4171-81DD-30511B762684}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

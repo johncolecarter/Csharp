@@ -6,7 +6,12 @@ namespace toDoCheckPoint
 {
     public class ItemContext : DbContext
     {
-        public DbSet<ToDoItem> ToDoList { get; set; }
+        public DbSet<ToDoItem> list { get; set; }
+
+        public ItemContext()
+        {
+           
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -19,8 +24,9 @@ namespace toDoCheckPoint
             optionsBuilder.UseSqlite("Data Source=" + DatabaseFile);
         }
 
-        public ItemContext()
+        public void AddItem(ToDoItem item)
         {
+            Database.ExecuteSqlRaw("INSERT INTO list (Item, Status) VALUES ({0}, {1})", item.Item, item.Status);
         }
     }
 }
